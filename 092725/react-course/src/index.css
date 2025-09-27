@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer components {
+  .input-field {
+    @apply w-full px-4 py-2 border rounded-md bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100;
+    transition: box-shadow 150ms ease, border-color 150ms ease, background-color 150ms ease;
+  }
+
+  .input-field:focus {
+    @apply outline-none ring-2 ring-blue-400 border-blue-400;
+  }
+
+  .btn-primary {
+    @apply px-5 py-2 bg-blue-600 text-white rounded-md shadow-md transition-colors transition-shadow duration-200;
+  }
+
+  .btn-primary:hover {
+    @apply bg-blue-700 shadow-lg;
+  }
+
+  .btn-primary:active {
+    @apply transform scale-98;
+  }
+}
