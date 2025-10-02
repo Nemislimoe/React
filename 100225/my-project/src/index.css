@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #ffffff;
+  --text: #111827;
+}
+.theme-dark {
+  --bg: #0f172a;
+  --text: #f8fafc;
+}
+.theme-blue {
+  --bg: #e6f0ff;
+  --text: #0b3a66;
+}
+.theme-green {
+  --bg: #ecfdf5;
+  --text: #064e3b;
+}
+body {
+  background: var(--bg);
+  color: var(--text);
+  transition: background-color 200ms, color 200ms;
+}
