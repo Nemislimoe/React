@@ -1,4 +1,3 @@
-// src/App.jsx
 import React from 'react';
 import MovieList from './MovieList';
 import UsersGrid from './UsersGrid';
